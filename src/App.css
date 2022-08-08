@@ -3,40 +3,57 @@
   margin: 0;
   padding: 0;
 }
+:root{
+  --text: #dd0031;
+}
 
+/* HEADER */
 #header{
   
-  transition: background-color 0.2s ease-in-out;
+
   background-color: #eeeeee;
   height: 3.5em;
   left: 0;
-
+  
   padding: 0 1.25em;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 10000;
 }
 header nav {
   display: flex;
-  
-  font-family: "Courier New", Courier, monospace;
-  font-size: 0.8em;
-  font-weight: 700;
+  margin-top: 25px;
+  font-family: 'apercu' ,sans-serif;
+  color: var(--text);
+  font-weight: 400;
   height: 3em;
   letter-spacing: 0.1em;
   line-height: 3em;
   
   right: 0.7em;
-  text-transform: uppercase;
+  
   top: 0.7em;
+  
+}
+header span{
+  border-left: 1px solid gray;
+  padding-left: 15px;
+}
+header .header-logo{
+  height:50px;
+  border-radius: 45px;
+  margin:0 20px 0 0;
+  
 }
 .nav-items{
+  
   display: flex;
   flex-direction: row;
- margin-left: 33%;
+ margin:0  33%;
 }
 .nav-items>li{
+  text-decoration: none;
   padding: 0 1em;
   list-style: none;
 }
@@ -44,7 +61,147 @@ header nav {
 .other-nav-items{
   display: flex;
   list-style: none;
-  margin: 0 25%;
+  
+}
+/* HOME */
+
+/* MENU */
+
+.menu-header{
+  color: gray;
+text-align: center;
+}
+div>h1{
+  color: var(--text);
+  margin-top: 5%;
+  margin-bottom: 15px;
+  text-align: center;
+  
+  width: 100%;
 }
 
 
+.features {
+  display: flex;
+
+  flex-wrap: wrap;
+  margin: 0 0 2em 0;
+}
+
+.features article {
+  padding: 1em 0.85em 0.1em 1em;
+  background-color: #ffffff;
+  /* border-radius: 2px; */
+  margin: 1.5em auto ;
+  text-align: center;
+  width: calc(25% - 1.5em);
+}
+
+.features article .image {
+  border-radius: 5px 5px 0 0;
+  display: block;
+
+  position: relative;
+  width: calc(100% + 3.5em);
+}
+a.special{
+  text-align: center;
+}
+.features h3{
+
+  text-align: center;
+  margin:1em 5em; 
+}
+.features article .image img {
+  border-radius: 5px 5px 0 0;
+  width: 95%;
+}
+@media screen and (max-width: 980px) {
+  .features article {
+    margin: 1em 0.85em 1em 0;
+    width: calc(45% - 1em);
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .features article {
+    padding: 1.5em 0.75em 0.1em 1.5em;
+    margin: 0.875em 1.75em 0.875em 0;
+    width: calc(35% - 0.875em - 1px);
+  }
+
+  .features article .image {
+    margin-bottom: 1.5em;
+    margin-left: -1.5em;
+    margin-top: -1.5em;
+    width: calc(100% + 3em);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .features {
+    display: block;
+  }
+
+  .features article {
+    width: 100%;
+    margin: 0 0 2em 0 !important;
+  }
+}
+
+
+
+
+
+/* PRE-FOOTER */
+.pre-footer{
+  background: url(https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/Footer%20Images/footer-burger-phone-desktop-new-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  
+}
+.pre-wrapper{
+  float: right;
+  
+  margin-left:60%;
+  margin-right: 10%;
+}
+.pre-wrapper img.one-logo{
+  margin: 2em 10em;
+}
+.pre-wrapper h4{
+  font-size: 24px;
+  text-align: center;
+  margin: 0 20px;
+}
+.pre-wrapper p{
+  font-size: 12px;
+  text-align: center;
+ margin: 2em 5em ;
+}
+.pre-wrapper a.app{
+margin-left: 7em;
+margin-top: em;
+
+}
+/* FOOTER */
+.footer-wrapper{
+  padding: 5em 10em  ;
+}
+.footer-items{
+  color: var(--text);
+  font-size: 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-wrapper>.footer-items *{
+  margin:0 .5em;
+  list-style: none;
+  
+}
+.socials{
+  margin: auto;
+  justify-content: flex-end;
+}

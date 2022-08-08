@@ -1,15 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Menu from '../pages/Menu'
 
 function Header() {
   return (
     <>
     <header id='header'>
         <nav>
-    <h1>"logo"</h1>
+        <img src='https://i.postimg.cc/zDCkXRrZ/chick-fil-a-png-logo-photo-4839.png' className='header-logo'/>
     <span>Find the spot</span>
     <ul className='nav-items'>
         <li>About</li>
-        <li>Menu</li>
+        <li><Link to='menu'>Menu</Link></li>
         <li>Career</li>
         </ul>
         
