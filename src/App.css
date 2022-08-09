@@ -6,22 +6,25 @@
 :root{
   --text: #dd0031;
 }
-
+a{
+  text-decoration: none;
+color: var(--text);
+}
 /* HEADER */
 #header{
-  
+ 
 
   background-color: #eeeeee;
   height: 3.5em;
   left: 0;
   
   padding: 0 1.25em;
-  position: absolute;
+ 
   top: 0;
   width: 100%;
   z-index: 10000;
 }
-header nav {
+/* header nav {
   display: flex;
   margin-top: 25px;
   font-family: 'apercu' ,sans-serif;
@@ -35,11 +38,11 @@ header nav {
   
   top: 0.7em;
   
-}
-header span{
+} */
+/* header span{
   border-left: 1px solid gray;
   padding-left: 15px;
-}
+} */
 header .header-logo{
   height:50px;
   border-radius: 45px;
@@ -63,9 +66,195 @@ header .header-logo{
   list-style: none;
   
 }
+
+.top-nav {
+  transition: background-color 0.2s ease-in-out;
+  background-color: #eeeeee;
+  height: 3.5em;
+  left: 0;
+  margin: 1em 0;
+  padding: 0 1.25em;
+  position: fixed;
+  /* top: 0; */
+  width: 100%;
+  z-index: 10000;
+display: flex;
+flex-direction: row;
+
+
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
+color: var(--text);
+height: 3.5em;
+
+position: fixed;
+}
+
+.top-nav span{
+  padding-top: 10px;
+  padding-left: 10px;
+  border-left: 1px solid gray;
+}
+
+
+.menu {
+  
+  text-decoration:unset ;  
+  color: var(--text);
+display: flex;
+flex-direction: row;
+list-style-type: none;
+margin-left: 30%;
+/* padding-top: 1em; */
+
+align-content: center; 
+}
+li.prime{
+  padding-top: 1em;
+}
+.menu :nth-last-child(2){
+  margin-left: 15em;
+ 
+ cursor: pointer;
+  color: white;
+  background: linear-gradient(-180deg,rgba(254,67,108,.99),rgba(221,0,49,.99) 49%,#c20726);
+  padding: 15px 10px;
+  border-radius:50px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.menu > li {
+margin: 0 1rem;
+overflow: hidden;
+}
+
+.menu-button-container {
+display: none;
+height: 100%;
+width: 30em;
+cursor: pointer;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#menu-toggle {
+display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+display: block;
+background-color: var(--text);
+position: absolute;
+height: 4px;
+width: 30px;
+transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+border-radius: 2px;
+}
+
+.menu-button::before {
+content: '';
+margin-top: -8px;
+}
+
+.menu-button::after {
+content: '';
+margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+margin-top: 0px;
+transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+margin-top: 0px;
+transform: rotate(-405deg);
+}
+
+@media (max-width: 900px) {
+.menu-button-container {
+  display: flex; 
+
+  
+}
+.menu {
+text-decoration: none;
+  position: absolute;
+  top: 0;
+  
+  margin: 50px 0 ;
+  left: 0;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+ 
+}
+#menu-toggle ~ .menu li {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+#menu-toggle:checked ~ .menu li {
+  width: 50%;
+  font-size: 15px;
+  
+  margin: 5px auto;
+  height: 2.5em;
+  padding: 0.5em;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu > li {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0.5em 0;
+  width: 100%;
+  font-weight: 300;
+  color: #000;
+  background-color: #eee;
+}
+.menu > li:not(:last-child) {
+  border-bottom: 1px solid #444;
+}
+section.pre-wrapper{
+  margin-right: 0;
+  width: 50%;
+}
+.pre-wrapper img{
+  width: 30%;
+
+}
+footer .footer-wrapper{
+  display: flex;
+  padding:3em;
+  font-size: .75em;
+}
+}
+
+
 /* HOME */
 
 /* MENU */
+.subnav>ul{
+  color: var(--text);
+  display: flex;
+  flex-direction: row;
+justify-content: space-evenly;
+list-style: none;
+margin: 1em 0 ;
+  
+}
 
 .menu-header{
   color: gray;
@@ -106,6 +295,12 @@ div>h1{
 }
 a.special{
   text-align: center;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(-180deg,rgba(254,67,108,.99),rgba(221,0,49,.99) 49%,#c20726);
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
 }
 .features h3{
 

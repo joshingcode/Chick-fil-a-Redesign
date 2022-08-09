@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-redesignchickfila-dev-122223-authRole",
+      "UnauthRoleArn": "arn:aws:iam::756941609771:role/amplify-redesignchickfila-dev-122223-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::756941609771:role/amplify-redesignchickfila-dev-122223-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-redesignchickfila-dev-122223-deployment",
+      "UnauthRoleName": "amplify-redesignchickfila-dev-122223-unauthRole",
+      "StackName": "amplify-redesignchickfila-dev-122223",
+      "StackId": "arn:aws:cloudformation:us-east-1:756941609771:stack/amplify-redesignchickfila-dev-122223/745d3c00-17ff-11ed-9266-0e9e298bec85",
+      "AmplifyAppId": "d3rgalab3igp8g"
+    }
+  }
+}

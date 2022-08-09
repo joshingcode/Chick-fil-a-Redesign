@@ -4,6 +4,14 @@ import PreFooter from '../share/PreFooter'
 function Menu() {
   return (
     <>
+    <div className='subnav'>
+        <ul>
+            <li>Breakfast</li>
+            <li>Entrees</li>
+            <li>Salads</li>
+            <li>Drinks</li>
+        </ul>
+    </div>
     <div className='menu-header'>
     <h1>Chick-fil-A® Menu</h1>
     <span className='subtext'>Availability may differ at different locations.</span>
@@ -15,7 +23,7 @@ function Menu() {
             <a className='image'><img src='https://www.cfacdn.com/img/order/menu/Online/Entrees/Jul19_CFASandwich_pdp.png'/></a>
             <h3 className='major'>chicken sand</h3>
             <p></p>
-            <a className='special'>Buy Now</a>
+            <a className='special'>Order Now</a>
             </article>
         <article>
             <a className='image'><img src='https://www.cfacdn.com/img/order/menu/Online/Entrees/Jul19_CFASandwich_pdp.png'/></a>
@@ -32,7 +40,7 @@ function Menu() {
      </div>
     </div>
     
-    <PreFooter/>
+  
 
     </>
   )
