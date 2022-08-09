@@ -12,75 +12,64 @@ See the License for the specific language governing permissions and limitations 
 const express = require('express')
 const bodyParser = require('body-parser')
 const awsServerlessExpressMiddleware = require('aws-serverless-express/middleware')
-
+const mysql=require('mysql2')
+const cors=require('cors')
 // declare a new express app
 const app = express()
 app.use(bodyParser.json())
 app.use(awsServerlessExpressMiddleware.eventContext())
-
+const dotenv=require('dotenv')
+dotenv.config();
 // Enable CORS for all methods
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*")
   res.header("Access-Control-Allow-Headers", "*")
   next()
 });
+app.use(cors())
 
+const db = mysql.createConnection({
+  host:'chickfila.ckjtg3n8r0ue.us-east-1.rds.amazonaws.com' || 'localhost',
+  user:'admin',
+  password:process.env.PASSWORD,
+  database:process.env.DB,
+  port:process.env.PORT,
+})
 
-/**********************
- * Example get method *
- **********************/
+db.connect((err)=>{
+  if(err) throw err
+  console.log('connect to db'+ db.state)
+})
 
-app.get('/menu', function(req, res) {
-  // Add your code here
-  res.json({success: 'get call succeed!', url: req.url});
-});
+app.get('/menu',(req,res)=>{
+  const query='SELECT * FROM menu_items WHERE cat_id=1'
+  db.query(query,(err,result)=>{
+    if(err) throw err
+    else res.send(result) && console.log(result)
+  })
+})
+app.get('/menu/breakfast',(req,res)=>{
+  const query='SELECT * FROM menu_items WHERE cat_id=2'
+  db.query(query,(err,result)=>{
+    if(err) throw err
+    else res.send(result) && console.log(result)
+  })
+})
+app.get('/menu/salads',(req,res)=>{
+  const query='SELECT * FROM menu_items WHERE cat_id=3'
+  db.query(query,(err,result)=>{
+    if(err) throw err
+    else res.send(result) && console.log(result)
+  })
+})
+app.get('/menu/drinks',(req,res)=>{
+  const query='SELECT * FROM menu_items WHERE cat_id=4'
+  db.query(query,(err,result)=>{
+    if(err) throw err
+    else res.send(result) && console.log(result)
+  })
+})
 
-app.get('/menu/*', function(req, res) {
-  // Add your code here
-  res.json({success: 'get call succeed!', url: req.url});
-});
-
-/****************************
-* Example post method *
-****************************/
-
-app.post('/menu', function(req, res) {
-  // Add your code here
-  res.json({success: 'post call succeed!', url: req.url, body: req.body})
-});
-
-app.post('/menu/*', function(req, res) {
-  // Add your code here
-  res.json({success: 'post call succeed!', url: req.url, body: req.body})
-});
-
-/****************************
-* Example put method *
-****************************/
-
-app.put('/menu', function(req, res) {
-  // Add your code here
-  res.json({success: 'put call succeed!', url: req.url, body: req.body})
-});
-
-app.put('/menu/*', function(req, res) {
-  // Add your code here
-  res.json({success: 'put call succeed!', url: req.url, body: req.body})
-});
-
-/****************************
-* Example delete method *
-****************************/
-
-app.delete('/menu', function(req, res) {
-  // Add your code here
-  res.json({success: 'delete call succeed!', url: req.url});
-});
-
-app.delete('/menu/*', function(req, res) {
-  // Add your code here
-  res.json({success: 'delete call succeed!', url: req.url});
-});
 
 app.listen(3000, function() {
     console.log("App started")

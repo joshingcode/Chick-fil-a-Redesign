@@ -72,7 +72,7 @@ header .header-logo{
   background-color: #eeeeee;
   height: 3.5em;
   left: 0;
-  margin: 1em 0;
+  margin: 0;
   padding: 0 1.25em;
   position: fixed;
   /* top: 0; */
@@ -90,8 +90,10 @@ position: fixed;
 }
 
 .top-nav span{
+  margin-top: 7px;
   padding-top: 10px;
-  padding-left: 10px;
+  padding-left: 15px;
+
   border-left: 1px solid gray;
 }
 
@@ -103,25 +105,28 @@ position: fixed;
 display: flex;
 flex-direction: row;
 list-style-type: none;
-margin-left: 30%;
+margin-left: 25%;
 /* padding-top: 1em; */
 
 align-content: center; 
 }
 li.prime{
   padding-top: 1em;
+  color: var(--text);
 }
 .menu :nth-last-child(2){
-  margin-left: 15em;
+  margin-left: 28em;
  
  cursor: pointer;
   color: white;
   background: linear-gradient(-180deg,rgba(254,67,108,.99),rgba(221,0,49,.99) 49%,#c20726);
   padding: 15px 10px;
-  border-radius:50px;
+  border-radius:5em; 
   font-size: 15px;
   text-align: center;
+ 
 }
+
 
 .menu > li {
 margin: 0 1rem;
@@ -246,6 +251,10 @@ footer .footer-wrapper{
 /* HOME */
 
 /* MENU */
+.subnav{
+  margin:1em 0;
+  height: 30px;
+}
 .subnav>ul{
   color: var(--text);
   display: flex;
@@ -274,16 +283,19 @@ div>h1{
   display: flex;
 
   flex-wrap: wrap;
-  margin: 0 0 2em 0;
+  margin: 0 0 1em 0;
 }
-
+.description{
+  margin-bottom: 10%;
+}
 .features article {
+ 
   padding: 1em 0.85em 0.1em 1em;
   background-color: #ffffff;
   /* border-radius: 2px; */
   margin: 1.5em auto ;
   text-align: center;
-  width: calc(25% - 1.5em);
+  width: calc(30% - 1.5em);
 }
 
 .features article .image {
@@ -293,6 +305,7 @@ div>h1{
   position: relative;
   width: calc(100% + 3.5em);
 }
+
 a.special{
   text-align: center;
   cursor: pointer;
@@ -301,6 +314,7 @@ a.special{
   padding: 10px;
   border-radius: 20px;
   font-size: 15px;
+
 }
 .features h3{
 
@@ -309,7 +323,7 @@ a.special{
 }
 .features article .image img {
   border-radius: 5px 5px 0 0;
-  width: 95%;
+  width: 85%;
 }
 @media screen and (max-width: 980px) {
   .features article {
