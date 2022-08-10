@@ -32,8 +32,8 @@ function Header() {
 <div hidden className='menu-button'></div>
 </label>
 <ul className="menu other-nav-items">
-        <li className='prime'><Link to='about'>About</Link></li>
         <li className='prime'><Link to='menu'>Menu</Link></li>
+        <li className='prime'><Link to='about'>About</Link></li>
         <li className='prime'><Link to='contact'>Career</Link></li>
         <li>Order Food</li>
         <li className='prime'><i class="fa-solid fa-magnifying-glass"></i></li>

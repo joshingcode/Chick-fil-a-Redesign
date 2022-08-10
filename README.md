@@ -1,3 +1,38 @@
+# Requirements
+[X] Wireframe "PETE"
+[] 2 Personas "LAURA"
+
+[] 4 views (pages).
+    [] Nav "JOSH"
+    [X] Footer "JOSH"
+
+
+    [] Home "IBT"
+    [X] Menu "JOSH"
+    [] About "JUBLIEE"
+    [] Career "PETE"
+
+   
+[] Responsive design
+    [] tablet 
+    [] mobile
+
+
+[X] Github repository 
+
+## Backend Requirements 
+
+[] RESTful API (amplify backend) "JOSH"
+[] MySQL (RDS)
+[] Cloud Deployment - AWS
+
+## Contact page 
+
+[] validation 
+[] connect to a database with the ability to post successfully. (Only      include Contact page if Original Site has one)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -12,7 +12,7 @@ function Salads() {
 <div className='subnav'>
 <ul>
 <Link to='../menu/breakfast'><li>Breakfast</li></Link>
-<Link to='./menu'><li>Entrees</li></Link>
+<Link to='../menu'><li>Entrees</li></Link>
 <Link to='../menu/salads'><li>Salads</li></Link>
  <Link to='../menu/drinks'><li>Drinks</li></Link>
 </ul>
