@@ -1,13 +1,11 @@
 # Requirements
-[X] Wireframe "PETE"\
+    [X] Wireframe "PETE"
 
+    [] 2 Personas "LAURA"
 
-[] 2 Personas "LAURA"
-
-[] 4 views (pages).\
+[] 4 views (pages).
     
-    
-    [] Nav "JOSH"\
+    [X] Nav "JOSH"
     [X] Footer "JOSH"
 
 
@@ -29,9 +27,9 @@
 
 ## Backend Requirements 
 
-[] RESTful API (amplify backend) "JOSH"\
-[] MySQL (RDS)\
-[] Cloud Deployment - AWS\
+[X] RESTful API (amplify backend) "JOSH"\
+[X] MySQL (RDS)\
+[X] Cloud Deployment - AWS\
 
 ## Contact page \
 
