@@ -1,9 +1,13 @@
 # Requirements
-[X] Wireframe "PETE"
+[X] Wireframe "PETE"\
+
+
 [] 2 Personas "LAURA"
 
-[] 4 views (pages).
-    [] Nav "JOSH"
+[] 4 views (pages).\
+    
+    
+    [] Nav "JOSH"\
     [X] Footer "JOSH"
 
 
@@ -13,8 +17,11 @@
     [] Career "PETE"
 
    
-[] Responsive design
-    [] tablet 
+[] Responsive design\
+    
+    
+    [] tablet \
+    
     [] mobile
 
 
@@ -22,13 +29,13 @@
 
 ## Backend Requirements 
 
-[] RESTful API (amplify backend) "JOSH"
-[] MySQL (RDS)
-[] Cloud Deployment - AWS
+[] RESTful API (amplify backend) "JOSH"\
+[] MySQL (RDS)\
+[] Cloud Deployment - AWS\
 
-## Contact page 
+## Contact page \
 
-[] validation 
+[] validation \
 [] connect to a database with the ability to post successfully. (Only      include Contact page if Original Site has one)
 
 
