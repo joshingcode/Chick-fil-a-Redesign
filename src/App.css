@@ -244,7 +244,120 @@ footer .footer-wrapper{
 
 
 /* HOME */
+div.main-wrapper{
+  display: flex;
+  
+}
+div.main-text{
+  
+  height: 200px;
+  margin-top:8%;
+  margin-left: 8%; 
+  
+}
+div.main-text h1{
+  font-size: 78px;
+  text-align: left;
+}
+div.main-text p{
+  margin:1.5em 0 ;
+  margin-bottom:3em;
+  color: #5b6770;
+    font-size: 18px;
+    letter-spacing: -.5px;
+    line-height: 28px;
+}
+div.main-text a{
+  align-items: center;
+    background: linear-gradient(-180deg,rgba(254,67,108,.99),rgba(221,0,49,.99) 49%,#c20726);
+    border-radius: 12.4838px;
+    color: #fff;
+    margin: 16px 16px;
+    margin-left: 0;
+    padding:20px;
+}
+a{
+  border-bottom: 2px dotted transparent;
+  color: #dd0031;
+  text-decoration: none;
+}
 
+div.first-section{
+  display:flex;
+margin: 3em 0;
+}
+div.first-section img{
+  margin-right: 2em;
+}
+div.first-text{
+  margin:22px 3em;
+  padding-right: 3em;
+}
+div.first-text span{
+  font-size:23px;
+  margin-bottom: 3em;
+color: #485259;
+}
+div.first-text h2{
+  color: #dd0031;
+  margin-bottom: 16px;
+  font-size: 48px;
+  margin-top:.5em;
+}
+div.first-text p{
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 2em;} 
+
+div.first-text button{
+  background: linear-gradient(-180deg,rgba(254,67,108,.99),rgba(221,0,49,.99) 49%,#c20726);
+    border-radius: 24px;
+    font-size:18px;    color: #fff;
+
+    border: 0;
+    padding: 1em;
+        cursor: pointer;
+
+}
+
+div.points-section img{
+  width: 50%; 
+  border:2px solid red;
+  margin: 2em auto;
+}
+div.points-text{
+  margin-left:25em;
+  margin-right: 15em;
+  padding: 0;
+}
+div.points-text h2{
+  font-size:48px;
+  font-weight: 500;
+  color:#004f71;
+
+}
+div.second{
+  margin-top:13em ;
+}
+div.second img{
+  margin-top:5em ;
+}
+div.second-text h2{
+  color:#004f71;
+  font-size: 48px;
+  padding-right: 4em;
+  line-height:1.5;
+}
+@media screen and (max-width: 980px){
+  div.first-section{
+    display:flex;
+    flex-direction: column;
+    margin:0;
+  }
+  .points-section{
+    margin:0;
+  }
+}
 /* MENU */
 .subnav>ul{
   color: var(--text);
