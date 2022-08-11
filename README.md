@@ -11,7 +11,7 @@
 
     [] Home "IBT"
     [X] Menu "JOSH"
-    [] About "JUBILEE"
+    [X] About "JUBILEE"
     [] Career "PETE"
 
    

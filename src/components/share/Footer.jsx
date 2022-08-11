@@ -14,11 +14,11 @@ function Footer() {
             <li>Press Room</li>
         </ul>
         <ul className=' footer-items socials'>
-            <li>fb icon</li>
-            <li>ig icon</li>
-            <li>twitter icon</li>
-            <li>yt icon</li>
-            <li>linked icon</li>
+            <li><i class="fa-brands fa-facebook"/></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-linkedin"/></li>
+            <li><i class="fa-brands fa-youtube"/></li>
+           
         </ul>
         </div>
     </footer>
@@ -26,4 +26,7 @@ function Footer() {
   )
 }
 
+
+
+<img src='https://i.postimg.cc/6QKFc5XS/twitter.png'/>
 export default Footer

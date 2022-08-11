@@ -26,7 +26,8 @@ function Header() {
     </nav> */}
 <section className="top-nav">
 <Link to='/'><img src='https://i.postimg.cc/zDCkXRrZ/chick-fil-a-png-logo-photo-4839.png' className='header-logo'/></Link>
-    <span><i class="fa-solid fa-location-dot"></i>Find the spot</span>
+    <i className="fa-solid fa-location-dot"></i>
+    <span>Find a Resturant</span>
 <input id="menu-toggle" type="checkbox" />
 <label className='menu-button-container' htmlFor="menu-toggle">
 <div hidden className='menu-button'></div>
@@ -35,7 +36,8 @@ function Header() {
         <li className='prime'><Link to='menu'>Menu</Link></li>
         <li className='prime'><Link to='about'>About</Link></li>
         <li className='prime'><Link to='contact'>Career</Link></li>
-        <li>Order Food</li>
+     
+        <li className='special'>Order Food</li>
         <li className='prime'><i class="fa-solid fa-magnifying-glass"></i></li>
 
 </ul>
